@@ -12,7 +12,7 @@ If you have plink files: test.bim, test.fam, test.bed
 
 plink_prefix = {input_dir}/test 
 
-`python plink_remove_dups.py --bfile {plink_prefix} --out {output_dir}` 
+`plink_remove_dups --plink_prefix {plink_prefix} -o {output_dir}` 
 
 ### Output 
 
