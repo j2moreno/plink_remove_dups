@@ -6,6 +6,14 @@ Tool to remove duplicate snps inside of plink binary files bim, bed, and fam. Un
 - bcftools
 - plink 
 
-### How to run
+### Usage
 
-`python plink_remove_dups.py --bfile {plink_prefix} --out {output_prefix}` 
+If you have plink files: test.bim, test.fam, test.bed 
+
+plink_prefix = {input_dir}/test 
+
+`python plink_remove_dups.py --bfile {plink_prefix} --out {output_dir}` 
+
+### Output 
+
+`{output_dir}/test_no_dups_final.{bim,fam,bed}`
