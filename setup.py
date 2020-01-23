@@ -2,24 +2,24 @@
 
 import setuptools
 
-import plink_remove_dups.release
+import hii_plink.release
 
 install_requires = [
 ]
 
 setuptools.setup(
-    name='plink_remove_dups',
-    url='https://github.com/j2moreno/plink_remove_dups',
-    version=plink_remove_dups.release.__version__,
-    description='Tool that helps remove duplicates inside of plink binary files',
+    name='hii_plink',
+    url='https://github.com/j2moreno/hii_plink',
+    version=hii_plink.release.__version__,
+    description='Tool that helps with a variety of plink commands',
     author='Leonardo Moreno',
     author_email='leo.moreno@epi.usf.edu',
     packages=[
-        'plink_remove_dups',
+        'hii_plink',
     ],
     entry_points={
         'console_scripts': [
-            'plink_remove_dups = plink_remove_dups.cli:main',
+            'hii_plink = hii_plink.cli:main',
         ]
     },
     install_requires=install_requires

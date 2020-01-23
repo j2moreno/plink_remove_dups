@@ -1,10 +1,10 @@
 from os.path import abspath, basename, dirname, exists, join, splitext
 
-import plink_remove_dups.core
 import subprocess
 from subprocess import PIPE
 
-def remove_dups(args):
+def remove_duplicates(args):
+
     plink_fname = args['plink_prefix']
     output_prefix = args['output_prefix']
 
@@ -39,3 +39,9 @@ def remove_dups(args):
     print("Finished fixing Fam IDs")
     print("***** COMPLETE ******")
 
+
+def snpid_from_coord_update(args):
+    pass
+
+def snpid_and_position_update(args):
+    pass
